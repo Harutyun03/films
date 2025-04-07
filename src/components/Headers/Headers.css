@@ -1,0 +1,50 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.container{
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 15px;
+}
+ol,ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+
+.logo {
+    width: 200px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    padding: 20px 15px;
+    background-color: #0d253f;;
+}
+
+.inp{
+    padding: 7px 15px;
+    border-radius: 15px;
+}
+
+.sel{
+    padding: 4px 1px;
+}
+
+svg{
+    color: white;
+    font-size: 25px;
+}
+
+.a{
+    display: flex;
+    align-items: center;
+}
