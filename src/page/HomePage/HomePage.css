@@ -1,0 +1,13 @@
+.films-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin-top: 100px;
+}
+
+.home-page{
+    background-color: #0d253f;;
+}

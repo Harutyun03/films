@@ -1,0 +1,11 @@
+.images{
+    max-width: 250px;
+}
+
+.film-info{
+    text-align: center;
+    border: 2px solid white;
+    width: 280px;
+    height: 500px;
+    background-color: white;
+}

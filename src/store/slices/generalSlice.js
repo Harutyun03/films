@@ -15,10 +15,13 @@ const generSlice = createSlice({
     name : 'generSlice ',
     initialState : {
         generes : [],
-        isFetching : false
+        isFetching : false,
+        genereee : []
     },
     reducers : {
-
+        changeGaner(state,action) {
+            state.genereee = generes.filter((gener) => gener.name)
+        }
     },
     extraReducers : (builder) => {
         builder.addCase(getGeneres.pending, (state,action) => {
@@ -31,4 +34,5 @@ const generSlice = createSlice({
     }
 })
 
+export const {changeGaner} = generSlice.actions
 export default generSlice.reducer

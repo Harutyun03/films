@@ -1,0 +1,21 @@
+.films-info{
+    border: 2px solid white;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.image{
+    max-width: 350px;
+}
+
+.info{
+    /* border: 2px solid black; */
+    padding-top: 10px;
+    >p{
+        font-size: 20px;
+    }
+}

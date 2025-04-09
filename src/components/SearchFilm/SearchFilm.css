@@ -1,0 +1,19 @@
+.serch-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.serch-item{
+    border: 2px solid white;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+}
+
+.imag{
+    max-width: 300px;
+    height: 400px;
+}

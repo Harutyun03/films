@@ -10,5 +10,14 @@ const instance = axios.create({
 export const FilmsAPI = {
     getGeners(language){
         return instance.get(`genre/movie/list?api_key=${apiKey}&language=${language}`)
+    },
+    getFilms(language,pageCount=1){
+        return instance.get(`discover/movie?api_key=${apiKey}&language=${language}&page=${pageCount}`)
+    },
+    getFilm(id,language){
+        return instance.get(`/movie/${id}?api_key=${apiKey}&language=${language}`)
+    },
+    getSearch(text){
+        return instance.get(`search/movie?api_key=${apiKey}&query=${text}`)
     }
 }
