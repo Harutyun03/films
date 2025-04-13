@@ -37,7 +37,7 @@ const Headers = () => {
             <div className='a'>
                <CiSearch />
                <input placeholder='search' className='inp' value={text} onChange={(e) => dispatch(changeText(e.target.value))}/>
-               <button  onClick={() => handleSearch(text)}>search</button>
+               <button className='b-serch'  onClick={() => handleSearch(text)}>search</button>
                <select onChange={(e) => dispatch(changeLanguage(e.target.value))} className='sel'>
                 <option value='en-US'>en-US</option>
                 <option value='ru-US'>ru-RU</option>

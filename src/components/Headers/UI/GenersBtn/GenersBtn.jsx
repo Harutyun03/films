@@ -1,19 +1,18 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import './GenersBtn.css'
-import { changeGaner } from '../../../../store/slices/generalSlice'
+import { NavLink } from 'react-router-dom'
 
 const GenersBtn = ({gener}) => {
+  console.log(gener);
   
   const dispatch = useDispatch()
-  const handlegener = (name) => {
-    dispatch(changeGaner())
-  }
+
   return (
     <div>
-      <ul>
-         <li className='btn' onClick={(name) => handlegener(name)}>{gener?.name}</li>
-      </ul>
+      <NavLink to={`/generFilm/${gener.id}`}>
+          <li className='btn'>{gener?.name}</li>
+      </NavLink>
     </div>
   )
 }

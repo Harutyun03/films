@@ -19,5 +19,8 @@ export const FilmsAPI = {
     },
     getSearch(text){
         return instance.get(`search/movie?api_key=${apiKey}&query=${text}`)
-    }
+    },
+    getMovies(language,genreId,page) {
+        return instance.get(`/discover/movie?api_key=${apiKey}&language=${language}&with_genres=${genreId}&page=${page}`)
+    },
 }

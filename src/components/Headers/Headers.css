@@ -48,3 +48,8 @@ svg{
     display: flex;
     align-items: center;
 }
+
+.b-serch{
+    cursor: pointer;
+    padding: 4px 7px;
+}

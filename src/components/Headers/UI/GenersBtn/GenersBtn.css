@@ -18,4 +18,5 @@ a{
 li{
    cursor: pointer;
    font-size: 19px;
+   list-style: none;
 }

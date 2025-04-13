@@ -1,12 +1,18 @@
 import React from 'react'
 import './FilmsCard.css'
 import { useDispatch,useSelector } from 'react-redux'
-import { NavLink } from 'react-router-dom'
+import { NavLink,useParams } from 'react-router-dom'
+import { useState } from 'react'
+import { useEffect } from 'react'
+
 
 const FilmsCard = ({film}) => {
     const dispatch = useDispatch
     const imgUrl = 'https://image.tmdb.org/t/p/w500/'
     const {pageCount} = useSelector((state) => state.filmsData)
+    const [page, setPage] = useState(1)
+    const {id} = useParams()
+    const {language} = useSelector((state) => state.globalData)
 
 
 
